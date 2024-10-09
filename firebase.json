@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/szuch-portfolio",
     "ignore": [
       "firebase.json",
       "**/.*",

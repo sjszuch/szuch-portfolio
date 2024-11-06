@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CardComponent } from "./components/card/card.component";
 import { HeroComponent } from "./components/hero/hero.component";
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +14,12 @@ import { HeroComponent } from "./components/hero/hero.component";
 })
 export class AppComponent {
   title = 'szuch-portfolio';
+
+  constructor(public dialog: MatDialog) {
+  }
+
+  openDialog(): void { 
+    let dialogRef = this.dialog.open(DialogComponent); 
+  
+  } 
 }

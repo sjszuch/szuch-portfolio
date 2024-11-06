@@ -6,7 +6,28 @@
   flex-direction: column;
   gap: 1rem;
 
-  background-color: #000000;
+  background-color: #d28484;
+
+  font-family: "Merriweather", serif;
+
+  padding-bottom: 1rem;
+
+  background-image: url(/assets/hero-small.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+
+  // Medium Devices
+  @media (min-width: 768px) {
+    background-image: url(/assets/hero-medium.png);
+    height: 70vh;
+  }
+
+  // Large Devices
+  @media (min-width: 1200px) {
+    background-image: url(/assets/hero-large.png);
+    height: 70vh;
+  }
 }
 
 .resume {
@@ -41,11 +62,19 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 
   a {
     margin: 0.5rem;
     align-items: center;
     justify-content: center;
+
+    background-color: #00000079;
+
+    &:hover {
+      background-color: #ffffffc7;
+      transition: 0.3s;
+    }
   }
 }
 

@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   openDialog(): void { 
-    let dialogRef = this.dialog.open(DialogComponent); 
-  
+    let dialogRef = 
+    this.dialog.open(DialogComponent);
   } 
 }
